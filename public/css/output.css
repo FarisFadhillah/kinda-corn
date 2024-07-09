@@ -628,6 +628,54 @@ video {
   top: 100%;
 }
 
+.top-1\/3 {
+  top: 33.333333%;
+}
+
+.top-3\/4 {
+  top: 75%;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.top-1\/4 {
+  top: 25%;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
+.top-2\/4 {
+  top: 50%;
+}
+
+.top-auto {
+  top: auto;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
+.top-3\.5 {
+  top: 0.875rem;
+}
+
+.-top-3 {
+  top: -0.75rem;
+}
+
+.-top-3\.5 {
+  top: -0.875rem;
+}
+
+.top-96 {
+  top: 24rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -720,6 +768,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .max-w-\[250px\] {
@@ -818,6 +870,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.to-purple-400 {
+  --tw-gradient-to: #c084fc var(--tw-gradient-to-position);
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -861,6 +917,34 @@ video {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pb-36 {
+  padding-bottom: 9rem;
 }
 
 .text-center {
@@ -1040,6 +1124,78 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:top-1\/2 {
+    top: 50%;
+  }
+
+  .sm\:top-1\/3 {
+    top: 33.333333%;
+  }
+
+  .sm\:top-3\/4 {
+    top: 75%;
+  }
+
+  .sm\:pt-0 {
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:top-3\/4 {
+    top: 75%;
+  }
+
+  .md\:top-1\/2 {
+    top: 50%;
+  }
+
+  .md\:top-1\/4 {
+    top: 25%;
+  }
+
+  .md\:top-1\/3 {
+    top: 33.333333%;
+  }
+
+  .md\:top-2\/3 {
+    top: 66.666667%;
+  }
+
+  .md\:w-1\/4 {
+    width: 25%;
+  }
+
+  .md\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:w-3\/4 {
+    width: 75%;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .md\:pt-32 {
+    padding-top: 8rem;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .md\:pt-20 {
+    padding-top: 5rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:static {
     position: static;
@@ -1095,8 +1251,8 @@ body {
     background-color: transparent;
   }
 
-  .lg\:pb-36 {
-    padding-bottom: 9rem;
+  .lg\:pb-20 {
+    padding-bottom: 5rem;
   }
 
   .lg\:pl-44 {
@@ -1107,8 +1263,8 @@ body {
     padding-top: 9rem;
   }
 
-  .lg\:pb-20 {
-    padding-bottom: 5rem;
+  .lg\:pb-36 {
+    padding-bottom: 9rem;
   }
 
   .lg\:text-left {
