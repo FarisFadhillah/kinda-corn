@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+      /* Font-face for Superboy font */
+      @font-face {
+        font-family: 'Superboys';
+        src: url('fonts/Superboys.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+        #home {
+          position: relative;
+          z-index: 0;
+        }
+
+        #home::before {
+          content: "";
+          background-image: url('img/bg-kindaac.png'); /* Sesuaikan jalur gambar */
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          height: 100vh;
+          opacity: 0.1; /* Sesuaikan opacity */
+          z-index: -10;
+        }
+
+    </style>
+    <title>KindaCorny</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container">
+        <div class="flex item-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="font-bold text-lg text-primary block py-6"
+              >
+              <img src="img/logo.png" alt="logo" class="w-36 h-16">
+              </a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base text-dark p-2 px-6 flex rounded-full group-hover:text-white group-hover:bg-secondary"
+                    ><svg class="h-6 w-6 text-black group-hover:text-white group-hover:bg-secondary"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="5 12 3 12 12 3 21 12 19 12" />  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg></a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#product"
+                    class="text-base font-semibold text-dark p-2 mx-4 flex rounded-full group-hover:text-white group-hover:bg-secondary"
+                    >Product</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#gallery"
+                    class="text-base font-semibold text-dark p-2 mx-4 flex rounded-full group-hover:text-white group-hover:bg-secondary"
+                    >Gallery</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base font-semibold text-dark p-2 mx-4 flex rounded-full group-hover:text-white group-hover:bg-secondary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- HomePage -->
+    <section id="home" class="lg:pt-36 pt-32 lg:pb-20 ">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap justify-between">
+          <img
+            src="img/heroo.jpg"
+            alt="Second Image"
+            class="absolute lg:top-1/2 top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:-translate-y-1/2 rounded-full w-3/4 lg:w-1/3 -z-10 object-cover"
+          />
+          <div class="w-full lg:w-1/2 self-center pt-5 lg:pl-44">
+            <h1 data-aos="fade-up" class="text-xl font-semibold text-[#F09B37] lg:text-3xl lg:text-left text-center">
+              SELAMAT DATANG
+              <span data-aos="fade-up" data-aos-delay="200" class="block font-bold text-primary text-5xl lg:text-6xl"
+                >JASUKE</span
+              >
+            </h1>
+            <h2 data-aos="fade-up" data-aos-delay="600" class="font-medium text-primary text-2xl mb-5 lg:text-4xl lg:text-left text-center">
+              KINDA CORNY
+            </h2>
+            <p data-aos="fade-up" data-aos-delay="800" class="font-medium text-primary mb-10 leading-relaxed lg:text-left text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
+              officiis eos, ipsam ratione laborum eius? Accusamus similique,
+              porro ad.
+            </p>
+          </div>
+          <div class="w-full lg:w-1/2 self-center pt-32 lg:pl-44">
+            <h2 data-aos="fade-up" class="font-medium text-primary text-lg mb-5 mt-36 lg:text-4xl lg:text-left text-center">
+              Heading 1
+            </h2>
+            <p data-aos="fade-up" data-aos-delay="200" class="font-medium text-primary mb-10 leading-relaxed lg:text-left text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              sint ullam, odit inventore ipsa quis magni nisi sit tempora vero,
+              perspiciatis
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End HomePage -->
+
+    <!-- ProductPage -->
+    <section id="product" class="mb-20">
+        <div class="container">
+            <div class="flex flex-wrap ">
+              <div class="w-full self-center px-4 lg:w-1/2">
+                  <h1 data-aos="fade-up" class="font-bold text-primary text-4xl mt-1 pl-4 lg:text-5xl border-l-4 border-black">Variant</h1>
+                  <p data-aos="fade-up" data-aos-delay="200" class="font-medium text-dark text-lg mb-2 pl-4 border-l-4 border-black lg:text-2xl">Heading 2</p>
+                  <p data-aos="fade-up" data-aos-delay="400" class="font-medium text-dark2 mb-10 pl-4 border-l-4 border-black leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, quos?</p>
+
+                  <ul class="pl-4 list-none">
+                      <li class="mb-4" data-aos="fade-up" data-aos-delay="600">
+                          <span class="inline-block font-medium text-white p-2 pr-4 leading-relaxed bg-secondary rounded-l-full rounded-br-full">Variant 1</span>
+                      </li>
+                      <li class="mb-4" data-aos="fade-up" data-aos-delay="700">
+                          <span class="inline-block font-medium text-white p-2 pr-4 leading-relaxed bg-secondary rounded-l-full rounded-br-full">Variant 2</span>
+                      </li>
+                      <li class="mb-4" data-aos="fade-up" data-aos-delay="800">
+                          <span class="inline-block font-medium text-white p-2 pr-4 leading-relaxed bg-secondary rounded-l-full rounded-br-full">Variant 3</span>
+                      </li>
+                      <li class="mb-4" data-aos="fade-up" data-aos-delay="900">
+                          <span class="inline-block font-medium text-white p-2 pr-4 leading-relaxed bg-secondary rounded-l-full rounded-br-full">Variant 4</span>
+                      </li>
+                  </ul>
+              </div>
+              <div class="absolute right-0 w-2/4 px-4 lg:w-1/2 bg-primary rounded-l-full translate-y-full lg:translate-y-0">
+                <div class="relative lg:right-0">
+                    <img src="img/variant-cir.jpg" alt="product" class="m-4 rounded-full w-3/4 shadow-black shadow-2xl">
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- End ProductPage -->
+
+    <!-- Gallerypage -->
+
+    <section id="product">
+        <div class="container">
+            <div class="flex flex-wrap ">
+              <div class="w-full self-center px-4 lg:w-1/2">
+                  
+              </div>
+              <div class="absolute right-0 w-2/4 px-4 lg:w-1/2 bg-primary rounded-l-full translate-y-full">
+                
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- End GalleryPage -->
+
+    <!-- Contactpage -->
+    <!-- End ContactPage -->
+
+    <!-- Footer -->
+    <!-- End Footer -->
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
