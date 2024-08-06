@@ -34,6 +34,9 @@
 
 /* nav-link */
 .active {
-  color: white;
-  background-color: #8CC540; /* Sesuaikan dengan warna hover */
+  color: #8ac43f;
+}
+
+.nav-link.active svg {
+  stroke: #8ac43f; /* Jika SVG memiliki stroke */
 }

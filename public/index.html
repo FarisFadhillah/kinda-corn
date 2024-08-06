@@ -17,7 +17,7 @@
         font-weight: normal;
         font-style: normal;
         }
-        #home {
+        #hero {
           position: relative;
           z-index: 0;
         }
@@ -26,9 +26,9 @@
           z-index: 0;
         }
 
-        #home::before {
+        /* #hero::before {
           content: "";
-          background-image: url('img/bg-kindaac.png'); /* Sesuaikan jalur gambar */
+          background-image: url('img/bg-heroo.png');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
@@ -38,13 +38,13 @@
           width: 100%;
           height: 100%;
           height: 100vh;
-          opacity: 0.1; /* Sesuaikan opacity */
+          opacity: 0.1; 
           z-index: -10;
-        }
+        } */
 
         .bg-contact::before {
           content: "";
-          background-image: url('img/variant.jpg'); /* Sesuaikan jalur gambar */
+          background-image: url('img/contact.jpg'); /* Sesuaikan jalur gambar */
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
@@ -54,7 +54,6 @@
           width: 100%;
           height: 100%;
           /* height: 100vh; */
-          opacity: 0.6; /* Sesuaikan opacity */
           z-index: -10;
         }
 
@@ -62,6 +61,34 @@
     <title>KindaCorny</title>
   </head>
   <body>
+    
+
+    <!-- HomePage -->
+    <section id="home" class="relative lg:pt-36 pt-32 md:pt-20 lg:pb-36">
+      <div class="container mx-auto relative z-10">
+        <div class="absolute inset-0 bg-[url('../img/bg-hero.png')] bg-cover bg-no-repeat z-0"></div>
+        <div id="hero" class="flex flex-wrap items-center justify-center">
+          <!-- Bagian Kiri -->
+          <div class="w-full lg:w-1/3 flex flex-col items-end text-right">
+            <h1 data-aos="fade-up" class="text-5xl font-semibold text-primary">
+              OFFICIAL WEBSITE
+              <span data-aos="fade-up" data-aos-delay="200" class="block font-bold text-primary text-9xl">
+                JASUKE
+              </span>
+              <span data-aos="fade-up" data-aos-delay="200" class="block font-bold text-primary text-7xl">
+                KINDA CORNY
+              </span>
+            </h1>
+          </div>
+          <!-- Bagian Kanan -->
+          <div data-aos="fade-up" data-aos-delay="100" class="w-3/5 flex items-center justify-center">
+            <img src="img/heroo.jpg" class="rounded-full p-1 border-black border-2 shadow-2xl max-w-2xl" alt="Gambar Besar">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End HomePage -->
+     
     <!-- Header -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
       <div class="container">
@@ -69,7 +96,7 @@
           <div class="px-4">
             <a href="#home" class="font-bold text-lg text-primary block py-6"
               >
-              <img src="img/logo.png" alt="logo" class="w-36 h-16">
+              <img src="img/logo.png" alt="logo" class="w-32 h-16">
               </a
             >
           </div>
@@ -97,30 +124,34 @@
             >
               <ul class="block lg:flex">
                 <li class="group">
-                  <a
-                    href="#home"
-                    class="text-base text-dark p-2 px-6 mx-4 flex rounded-full group-hover:text-white group-hover:bg-secondary"
-                    ><svg class="h-6 w-6 text-black group-hover:text-white group-hover:bg-secondary"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="5 12 3 12 12 3 21 12 19 12" />  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg></a
-                  >
+                  <a href="#home" class="nav-link text-base text-dark p-2 px-6 mx-4 flex rounded-full group-hover:text-secondary">
+                    <svg class="h-6 w-6 text-black" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z"/>
+                      <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                      <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                      <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                    </svg>
+                  </a>
                 </li>
+                
                 <li class="group">
                   <a
                     href="#product"
-                    class="text-base font-semibold text-dark p-2 mx-4 flex rounded-full group-hover:text-white group-hover:bg-secondary"
+                    class="text-base font-semibold text-dark p-2 mx-4 flex rounded-full group-hover:text-secondary"
                     >Produk</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#gallery"
-                    class="text-base font-semibold text-dark p-2 mx-4 flex rounded-full group-hover:text-white group-hover:bg-secondary"
+                    class="text-base font-semibold text-dark p-2 mx-4 flex rounded-full group-hover:text-secondary"
                     >Gallery</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#contact"
-                    class="text-base font-semibold text-dark p-2 mx-4 flex rounded-full group-hover:text-white group-hover:bg-secondary"
+                    class="text-base font-semibold text-dark p-2 mx-4 flex rounded-full group-hover:text-secondary"
                     >Kontak</a
                   >
                 </li>
@@ -132,77 +163,46 @@
     </header>
     <!-- Header End -->
 
-    <!-- HomePage -->
-    <section id="home" class="lg:pt-36 pt-32 md:pt-20 lg:pb-36 ">
-      <div class="container mx-auto">
-        <div class="flex flex-wrap justify-between">
-          <img
-            src="img/heroo.jpg"
-            alt="Second Image"
-            class="absolute lg:top-1/2 md:top-2/3 top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:-translate-y-1/2 rounded-full w-3/4 md:w-1/2 lg:w-1/3 -z-10 object-cover"
-          />
-          <div class="w-full lg:w-1/2 self-center pt-5 lg:pl-44">
-            <h1 data-aos="fade-up" class="text-xl font-semibold text-[#F09B37] lg:text-3xl lg:text-left text-center">
-              SELAMAT DATANG
-              <span data-aos="fade-up" data-aos-delay="200" class="block font-bold text-primary text-5xl lg:text-6xl"
-                >JASUKE</span
-              >
-            </h1>
-            <h2 data-aos="fade-up" data-aos-delay="600" class="font-medium text-primary text-2xl mb-5 lg:text-4xl lg:text-left text-center">
-              KINDA CORNY
-            </h2>
-            <p data-aos="fade-up" data-aos-delay="800" class="font-medium text-primary mb-10 leading-relaxed lg:text-left text-center">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
-              officiis eos, ipsam ratione laborum eius? Accusamus similique,
-              porro ad.
-            </p>
-          </div>
-          <div class="w-full lg:w-1/2 self-center sm:pt-0 md:pt-0 lg:pl-44">
-            <h2 data-aos="fade-up" class="font-medium text-primary text-lg mb-5 mt-36 lg:text-4xl lg:text-left text-center">
-              Heading 1
-            </h2>
-            <p data-aos="fade-up" data-aos-delay="200" class="font-medium text-primary mb-10 leading-relaxed lg:text-left text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-              sint ullam, odit inventore ipsa quis magni nisi sit tempora vero,
-              perspiciatis
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End HomePage -->
-
     <!-- ProductPage -->
-    <section id="product" class="mb-20 pt-60">
-        <div class="container">
-            <div class="flex flex-wrap ">
-              <div class="w-full self-center px-4 lg:w-1/2">
-                  <h1 data-aos="fade-up" class="font-bold text-primary text-4xl mt-1 pl-4 lg:text-5xl border-l-4 border-black">Heading 1</h1>
-                  <p data-aos="fade-up" data-aos-delay="200" class="font-medium text-dark text-lg mb-2 pl-4 border-l-4 border-black lg:text-2xl">Heading 2</p>
-                  <p data-aos="fade-up" data-aos-delay="400" class="font-medium text-dark2 mb-10 pl-4 border-l-4 border-black leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, quos?</p>
-
-                  <a href="#varian" class="inline-block font-medium text-white p-2 pr-4 leading-relaxed bg-secondary rounded-l-full rounded-br-full">Variant</a>
-                  
-              </div>
-              <div class="absolute right-0 w-1/2 px-4 md:w-1/3 lg:w-1/2 bg-primary rounded-l-full translate-y-full lg:translate-y-0">
-                <div class="relative lg:right-0">
+    <section id="product" class="mb-20">
+      <div class="container">
+        <div class="flex flex-wrap items-center">
+            <!-- Bagian Kiri -->
+            <div class="w-full lg:w-1/2 justify-center self-center px-4">
+                <h1 data-aos="fade-up" class="font-bold text-primary mt-1 pl-4 text-7xl border-l-4 border-black">
+                    PRODUK UNGGULAN
+                </h1>
+                <p data-aos="fade-up" data-aos-delay="200" class="font-medium text-dark my-8 pl-4 border-l-4 border-black lg:text-xl">
+                    Jasuke Kinda Corny berbeda dari jasuke lain, rasa jagung yang 
+                    matang pas ditambah dengan paduan keju mozarela yang 
+                    manis sedikit gurih menjadikan 
+                    jasuke kinda corny laris di jual.
+                </p>
+                <a href="#varian" class="inline-block font-medium text-xl text-white p-2 px-6 ml-4 leading-relaxed bg-secondary rounded-l-full rounded-br-full">
+                    Varian
+                </a>
+            </div>
+            <!-- Bagian Kanan -->
+            <div class="w-full lg:w-1/2 flex justify-center lg:justify-end px-4">
+                <div class="relative -right-44 bg-third rounded-l-full p-4 flex items-center">
                     <img src="img/variant-cir.jpg" alt="product" class="m-4 rounded-full w-3/4 shadow-black shadow-2xl">
                 </div>
-              </div>
             </div>
         </div>
-    </section>
+      </div>
+  </section>
+  
     <!-- End ProductPage -->
 
     <!-- varianpage -->
-    <section id="varian" class="pt-72">
-      <div class="container mx-auto">
+    <section id="product">
+      <div id="varian" class="container mx-auto">
           <div class="flex flex-wrap">
             <div class="w-full self-center px-4 my-14 flex flex-col items-center">
-              <h1 data-aos="fade-up" class="font-bold text-black text-2xl lg:text-6xl text-center">
-                Varian
+              <h1 data-aos="fade-up" class="font-bold text-primary text-8xl text-center">
+                . . . . . . &nbsp;&nbsp;&nbsp;&nbsp; VARIAN &nbsp;&nbsp;&nbsp;&nbsp; . . . . . .
               </h1>
-              <h1 data-aos="fade-up" data-aos-delay="100" class="font-medium text-dark text-xl mb-2  lg:text-2xl">Jasuke Kinda Corny</h1>
+              <h1 data-aos="fade-up" data-aos-delay="100" class="font-medium text-secondary text-4xl">Jasuke Kinda Corny</h1>
             </div>
 
               <!-- Bagian Kiri -->
@@ -210,14 +210,13 @@
                   <!-- Card 1 -->
                   <div data-aos="fade-up" data-aos-delay="200" class="w-full md:w-1/3 p-4">
                       <div class="bg-gradient-to-t from-yellow-400 to-white p-6 py-4 rounded-2xl shadow-lg mx-auto">
-                          <div class="flex justify-center mb-4">
-                              <img src="img/variant-cir.jpg" class="rounded-full w-24" alt="Gambar 1">
+                          <div class="flex justify-center mb-10">
+                              <img src="img/varian.jpg" class="rounded-full w-32" alt="Gambar 1">
                           </div>
                           <div class="flex items-center justify-between">
                               <div>
-                                  <p class="text-xl font-bold">Judul 1</p>
-                                  <p class="text-base">harga</p>
-                                  <p class="text-base font-bold">Rp 15.000</p>
+                                  <p class="text-sm font-bold">Original</p>
+                                  <p class="text-sm">Rp 13.000</p>
                               </div>
                               <svg class="h-8 w-8 text-black hover:text-red-600 hover:fill-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
@@ -228,14 +227,13 @@
                   <!-- Card 2 -->
                   <div data-aos="fade-up" data-aos-delay="200" class="w-full md:w-1/3 p-4">
                       <div class="bg-gradient-to-t from-yellow-400 to-white p-6 py-4 rounded-2xl shadow-lg mx-auto">
-                          <div class="flex justify-center mb-4">
-                              <img src="img/variant-cir.jpg" class="rounded-full w-24" alt="Gambar 2">
+                          <div class="flex justify-center mb-10">
+                              <img src="img/varian.jpg" class="rounded-full w-32" alt="Gambar 2">
                           </div>
                           <div class="flex items-center justify-between">
                               <div>
-                                  <p class="text-xl font-bold">Judul 2</p>
-                                  <p class="text-base">harga</p>
-                                  <p class="text-base font-bold">Rp 15.000</p>
+                                  <p class="text-sm font-bold">Cokelat</p>
+                                  <p class="text-sm">Rp 15.000</p>
                               </div>
                               <svg class="h-8 w-8 text-black hover:text-red-600 hover:fill-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
@@ -246,14 +244,13 @@
                   <!-- Card 3 -->
                   <div data-aos="fade-up" data-aos-delay="200" class="w-full md:w-1/3 p-4">
                       <div class="bg-gradient-to-t from-yellow-400 to-white p-6 py-4 rounded-2xl shadow-lg mx-auto">
-                          <div class="flex justify-center mb-4">
-                              <img src="img/variant-cir.jpg" class="rounded-full w-24" alt="Gambar 3">
+                          <div class="flex justify-center mb-10">
+                              <img src="img/varian.jpg" class="rounded-full w-32" alt="Gambar 3">
                           </div>
                           <div class="flex items-center justify-between">
                               <div>
-                                  <p class="text-xl font-bold">Judul 3</p>
-                                  <p class="text-base">harga</p>
-                                  <p class="text-base font-bold">Rp 15.000</p>
+                                  <p class="text-sm font-bold">Matcha</p>
+                                  <p class="text-sm">Rp 15.000</p>
                               </div>
                               <svg class="h-8 w-8 text-black hover:text-red-600 hover:fill-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
@@ -264,14 +261,13 @@
                   <!-- Card 4 -->
                   <div data-aos="fade-up" data-aos-delay="300" class="w-full md:w-1/3 p-4">
                       <div class="bg-gradient-to-t from-yellow-400 to-white p-6 py-4 rounded-2xl shadow-lg mx-auto">
-                          <div class="flex justify-center mb-4">
-                              <img src="img/variant-cir.jpg" class="rounded-full w-24" alt="Gambar 4">
+                          <div class="flex justify-center mb-10">
+                              <img src="img/varian.jpg" class="rounded-full w-32" alt="Gambar 4">
                           </div>
                           <div class="flex items-center justify-between">
                               <div>
-                                  <p class="text-xl font-bold">Judul 4</p>
-                                  <p class="text-base">harga</p>
-                                  <p class="text-base font-bold">Rp 15.000</p>
+                                  <p class="text-sm font-bold">Cream Cheese</p>
+                                  <p class="text-sm">Rp 16.000</p>
                               </div>
                               <svg class="h-8 w-8 text-black hover:text-red-600 hover:fill-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
@@ -281,15 +277,31 @@
                   </div>
                   <!-- Card 5 -->
                   <div data-aos="fade-up" data-aos-delay="300" class="w-full md:w-1/3 p-4">
+                    <div class="bg-gradient-to-t from-yellow-400 to-white p-6 py-4 rounded-2xl shadow-lg mx-auto">
+                        <div class="flex justify-center mb-14">
+                            <img src="img/varian.jpg" class="rounded-full w-32" alt="Gambar 4">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm font-bold">Mozarella</p>
+                                <p class="text-sm">Rp 16.000</p>
+                            </div>
+                            <svg class="h-8 w-8 text-black hover:text-red-600 hover:fill-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- Card 6 -->
+                  <div data-aos="fade-up" data-aos-delay="300" class="w-full md:w-1/3 p-4">
                       <div class="bg-gradient-to-t from-yellow-400 to-white p-6 py-4 rounded-2xl shadow-lg mx-auto">
-                          <div class="flex justify-center mb-4">
-                              <img src="img/variant-cir.jpg" class="rounded-full w-24" alt="Gambar 5">
+                          <div class="flex justify-center mb-10">
+                              <img src="img/varian.jpg" class="rounded-full w-32" alt="Gambar 6">
                           </div>
                           <div class="flex items-center justify-between">
                               <div>
-                                  <p class="text-xl font-bold">Judul 5</p>
-                                  <p class="text-base">harga</p>
-                                  <p class="text-base font-bold">Rp 15.000</p>
+                                  <p class="text-sm font-bold">Mozarella Cokelat</p>
+                                  <p class="text-sm">Rp 20.000</p>
                               </div>
                               <svg class="h-8 w-8 text-black hover:text-red-600 hover:fill-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
@@ -297,20 +309,36 @@
                           </div>
                       </div>
                   </div>
-                  <!-- Card 6 -->
+                  <!-- Card 7 -->
                   <div data-aos="fade-up" data-aos-delay="300" class="w-full md:w-1/3 p-4">
                       <div class="bg-gradient-to-t from-yellow-400 to-white p-6 py-4 rounded-2xl shadow-lg mx-auto">
-                          <div class="flex justify-center mb-4">
-                              <img src="img/variant-cir.jpg" class="rounded-full w-24" alt="Gambar 6">
+                          <div class="flex justify-center mb-10">
+                              <img src="img/varian.jpg" class="rounded-full w-32" alt="Gambar 6">
                           </div>
                           <div class="flex items-center justify-between">
                               <div>
-                                  <p class="text-xl font-bold">Judul 6</p>
-                                  <p class="text-base">harga</p>
-                                  <p class="text-base font-bold">Rp 15.000</p>
+                                  <p class="text-sm font-bold">Mozarella Matcha</p>
+                                  <p class="text-sm">Rp 20.000</p>
                               </div>
                               <svg class="h-8 w-8 text-black hover:text-red-600 hover:fill-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                              </svg>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Card 8 -->
+                  <div data-aos="fade-up" data-aos-delay="300" class="w-full md:w-1/3 p-4">
+                      <div class="bg-gradient-to-t from-yellow-400 to-white p-6 py-4 rounded-2xl shadow-lg mx-auto">
+                          <div class="flex justify-center mb-10">
+                              <img src="img/varian.jpg" class="rounded-full w-32" alt="Gambar 6">
+                          </div>
+                          <div class="flex items-center justify-between">
+                              <div>
+                                  <p class="text-sm font-bold">Mozarella Cream Cheese</p>
+                                  <p class="text-sm">Rp 20.000</p>
+                              </div>
+                              <svg class="h-8 w-8 text-black hover:text-red-600 hover:fill-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                               </svg>
                           </div>
                       </div>
@@ -319,7 +347,7 @@
                   
               </div>
               <!-- Bagian Kanan -->
-              <div data-aos="fade-up" data-aos-delay="100" class="w-full lg:w-1/2 p-4 flex items-center justify-center">
+              <div data-aos="fade-up" data-aos-delay="100" class="w-full lg:w-1/2 p-4 flex items-top justify-center top-0">
                   <img src="img/product.jpg" class="rounded-2xl shadow-2xl w-3/4" alt="Gambar Besar">
               </div>
           </div>
@@ -327,26 +355,24 @@
     </section>
     <!-- End varianPage -->
 
-
-
     <!-- Gallerypage -->
     <section id="gallery" class="py-12">
       <div class="container mx-auto">
           <div class="flex flex-wrap">
               <!-- Gambar Besar -->
-              <div data-aos="fade-up" data-aos-delay="100" class="w-full p-4">
+              <div data-aos="fade-up" data-aos-duration="1000" class="w-full p-4">
                   <img src="img/gallery-2.jpg" class="w-full h-auto rounded-lg shadow-lg" alt="Gambar Besar">
               </div>
               <!-- Gambar Kecil -->
               <div class="w-full flex flex-wrap justify-between p-4">
-                  <div data-aos="fade-up" data-aos-delay="100" class="w-full md:w-1/3 p-4">
-                      <img src="img/gallery-1.jpg" class="w-full h-auto rounded-lg shadow-lg" alt="Gambar Kecil 1">
+                  <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" class="w-full md:w-1/3 p-4">
+                      <img src="img/gallery-5.jpg" class="w-full h-auto rounded-lg shadow-lg" alt="Gambar Kecil 1">
                   </div>
-                  <div data-aos="fade-up" data-aos-delay="200" class="w-full md:w-1/3 p-4">
-                      <img src="img/variant.jpg" class="w-full h-auto rounded-lg shadow-lg" alt="Gambar Kecil 2">
+                  <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="w-full md:w-1/3 p-4">
+                      <img src="img/gallery-4.jpg" class="w-full h-auto rounded-lg shadow-lg" alt="Gambar Kecil 2">
                   </div>
-                  <div data-aos="fade-up" data-aos-delay="300" class="w-full md:w-1/3 p-4">
-                      <img src="img/gallery-2.jpg" class="w-full h-auto rounded-lg shadow-lg" alt="Gambar Kecil 3">
+                  <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" class="w-full md:w-1/3 p-4">
+                      <img src="img/gallery-3.jpg" class="w-full h-auto rounded-lg shadow-lg" alt="Gambar Kecil 3">
                   </div>
               </div>
           </div>
@@ -357,59 +383,66 @@
 
     <!-- Contactpage -->
       <section id="contact" class="mt-44">
-        <div class="container mx-auto">
-          <div class="w-full self-center px-4 my-14 py-24 flex flex-col items-center bg-contact">
-            <h1 data-aos="fade-up" class="font-bold text-dark text-2xl lg:text-5xl text-center">
+        <div class="mx-auto">
+          <div class="w-full self-center px-4 my-14 py-44 flex flex-col items-center bg-contact">
+            <h1 data-aos="fade-up" class="text-white text-2xl lg:text-5xl text-center">
               HUBUNGI KAMI
             </h1>
-            <h1 data-aos="fade-up" class="font-bold text-dark text-2xl mb-10 lg:text-5xl text-center">
+            <h1 data-aos="fade-up" class="text-white text-2xl mb-10 lg:text-5xl text-center">
               . . . . . .
             </h1>
-            <p data-aos="fade-up" class="w-1/2 font-bold text-dark text-2xl mb-10 lg:text-3xl text-center">
+            <p data-aos="fade-up" class="w-1/2 text-white text-2xl mb-10 lg:text-3xl text-center">
               Jika ada yang ingin ditanyakan silahkan kirimkan pesan anda ke kontak yang sudah ada
             </p>
           </div>
-          <div class="flex flex-wrap justify-center my-32">
+          <div class="flex flex-wrap justify-center mx-auto mb-12 w-1/2">
             <!-- Bagian tiktok -->
-            <div class="w-full lg:w-1/3 p-4 text-center border-l-4 border-black">
-              <div class="flex justify-center mb-4">
-                <svg width="50" height="50" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.89px;}</style></defs><path class="cls-1" d="M12.94,1.61V15.78a2.83,2.83,0,0,1-2.83,2.83h0a2.83,2.83,0,0,1-2.83-2.83h0a2.84,2.84,0,0,1,2.83-2.84h0V9.17h0A6.61,6.61,0,0,0,3.5,15.78h0a6.61,6.61,0,0,0,6.61,6.61h0a6.61,6.61,0,0,0,6.61-6.61V9.17l.2.1a8.08,8.08,0,0,0,3.58.84h0V6.33l-.11,0a4.84,4.84,0,0,1-3.67-4.7H12.94Z"/></svg>
+            <div class="w-full lg:w-1/3 p-4 text-center">
+              <div class="flex justify-center mb-4 ">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="72px" height="72px">
+                  <g transform="translate(51.2,51.2) scale(0.6,0.6)"><g fill="none" fill-rule="nonzero" stroke="#000000" stroke-width="10.66667" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M128,302.4083c-96.32304,0 -174.4083,-78.08525 -174.4083,-174.4083v0c0,-96.32304 78.08525,-174.4083 174.4083,-174.4083h0c96.32304,0 174.4083,78.08525 174.4083,174.4083v0c0,96.32304 -78.08525,174.4083 -174.4083,174.4083z" id="shape"></path></g><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M20,37c2.761,0 5,-2.239 5,-5v-1v-1v-23.93h5.208c-0.031,-0.14 -0.072,-0.276 -0.097,-0.419h-0.001c-0.044,-0.248 -0.076,-0.495 -0.099,-0.746v-0.835h-7.011v23.93v1v1c0,2.761 -2.239,5 -5,5c-0.864,0 -1.665,-0.239 -2.375,-0.625c0.848,1.556 2.478,2.625 4.375,2.625z" fill="#ffffff"></path><path d="M33.718,11.407c-0.797,-1.094 -1.364,-2.367 -1.607,-3.756h-0.001c-0.044,-0.248 -0.076,-0.495 -0.099,-0.746v-0.835h-1.803c0.491,2.182 1.761,4.062 3.51,5.337z" fill="#000000"></path><path d="M18,25c-2.761,0 -5,2.239 -5,5c0,1.897 1.069,3.527 2.625,4.375c-0.386,-0.71 -0.625,-1.511 -0.625,-2.375c0,-2.761 2.239,-5 5,-5c0.343,0 0.677,0.035 1,0.101v-7.05c-0.331,-0.028 -0.662,-0.051 -1,-0.051c-0.338,0 -0.669,0.023 -1,0.05v5.05c-0.323,-0.065 -0.657,-0.1 -1,-0.1z" fill="#000000"></path><path d="M36.257,13.783c0.867,0.541 1.819,0.908 2.806,1.131v-0.376v-0.002v-1.381c-1.7,0.003 -3.364,-0.473 -4.806,-1.373c-0.186,-0.116 -0.361,-0.247 -0.538,-0.376c0.687,0.945 1.544,1.757 2.538,2.377z" fill="#ffffff"></path><path d="M19,20.05v-2c-0.331,-0.027 -0.662,-0.05 -1,-0.05c-6.627,0 -12,5.373 -12,12c0,3.824 1.795,7.222 4.581,9.419c-1.612,-2.042 -2.581,-4.615 -2.581,-7.419c0,-6.29 4.842,-11.44 11,-11.95z" fill="#ffffff"></path><path d="M39.062,14.914v4.733c-3.375,0 -6.501,-1.071 -9.052,-2.894l0.003,13.247l-0.014,-0.018c0,0.006 0.001,0.012 0.001,0.018c0,6.627 -5.373,12 -12,12c-2.804,0 -5.377,-0.969 -7.419,-2.581c2.197,2.786 5.595,4.581 9.419,4.581c6.627,0 12,-5.373 12,-12c0,-0.006 -0.001,-0.012 -0.001,-0.018l0.014,0.018l-0.002,-13.248c2.551,1.823 5.677,2.894 9.052,2.894v-5.108v-0.002v-1.381c-0.678,0.002 -1.346,-0.094 -2.001,-0.241z" fill="#000000"></path><path d="M30,30c0,-0.006 -0.001,-0.012 -0.001,-0.018l0.014,0.018l-0.002,-13.248c2.551,1.823 5.677,2.894 9.052,2.894v-4.733c-0.987,-0.223 -1.939,-0.59 -2.806,-1.131c-0.994,-0.62 -1.851,-1.432 -2.538,-2.376c-1.75,-1.275 -3.019,-3.155 -3.51,-5.337h-5.209v23.931v1v1c0,2.761 -2.239,5 -5,5c-1.897,0 -3.527,-1.069 -4.375,-2.625c-1.556,-0.848 -2.625,-2.478 -2.625,-4.375c0,-2.761 2.239,-5 5,-5c0.343,0 0.677,0.035 1,0.101v-5.05c-6.158,0.509 -11,5.659 -11,11.949c0,2.804 0.969,5.377 2.581,7.419c2.042,1.612 4.615,2.581 7.419,2.581c6.627,0 12,-5.373 12,-12z" fill="#000000"></path></g></g></g>
+                </svg>
               </div>
-              <h2 class="text-xl font-semibold mb-2 ">Tiktok</h2>
-              <p>@username_tiktok</p>
+              <p class="text-xl font-bold mb-2 ">Tiktok</p>
+              <p>@kinda_corny</p>
             </div>
             <!-- Bagian WhatsApp -->
-            <div class="w-full lg:w-1/3 p-4 text-center border-l-4 border-black">
+            <div class="w-full lg:w-1/3 p-4 text-center border-x-2 border-black">
               <div class="flex justify-center mb-4">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z" fill="#000000"/>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="72px" height="72px">
+                  <g transform="translate(51.2,51.2) scale(0.6,0.6)"><g fill="none" fill-rule="nonzero" stroke="#000000" stroke-width="10.66667" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M128,302.4083c-96.32304,0 -174.4083,-78.08525 -174.4083,-174.4083v0c0,-96.32304 78.08525,-174.4083 174.4083,-174.4083h0c96.32304,0 174.4083,78.08525 174.4083,174.4083v0c0,96.32304 -78.08525,174.4083 -174.4083,174.4083z" id="shape"></path></g><g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12.01172,2c-5.506,0 -9.98823,4.47838 -9.99023,9.98438c-0.001,1.76 0.45998,3.47819 1.33398,4.99219l-1.35547,5.02344l5.23242,-1.23633c1.459,0.796 3.10144,1.21384 4.77344,1.21484h0.00391c5.505,0 9.98528,-4.47937 9.98828,-9.98437c0.002,-2.669 -1.03588,-5.17841 -2.92187,-7.06641c-1.886,-1.887 -4.39245,-2.92673 -7.06445,-2.92773zM12.00977,4c2.136,0.001 4.14334,0.8338 5.65234,2.3418c1.509,1.51 2.33794,3.51639 2.33594,5.65039c-0.002,4.404 -3.58423,7.98633 -7.99023,7.98633c-1.333,-0.001 -2.65341,-0.3357 -3.81641,-0.9707l-0.67383,-0.36719l-0.74414,0.17578l-1.96875,0.46484l0.48047,-1.78516l0.2168,-0.80078l-0.41406,-0.71875c-0.698,-1.208 -1.06741,-2.58919 -1.06641,-3.99219c0.002,-4.402 3.58528,-7.98437 7.98828,-7.98437zM8.47656,7.375c-0.167,0 -0.43702,0.0625 -0.66602,0.3125c-0.229,0.249 -0.875,0.85208 -0.875,2.08008c0,1.228 0.89453,2.41503 1.01953,2.58203c0.124,0.166 1.72667,2.76563 4.26367,3.76563c2.108,0.831 2.53614,0.667 2.99414,0.625c0.458,-0.041 1.47755,-0.60255 1.68555,-1.18555c0.208,-0.583 0.20848,-1.0845 0.14648,-1.1875c-0.062,-0.104 -0.22852,-0.16602 -0.47852,-0.29102c-0.249,-0.125 -1.47608,-0.72755 -1.70508,-0.81055c-0.229,-0.083 -0.3965,-0.125 -0.5625,0.125c-0.166,0.25 -0.64306,0.81056 -0.78906,0.97656c-0.146,0.167 -0.29102,0.18945 -0.54102,0.06445c-0.25,-0.126 -1.05381,-0.39024 -2.00781,-1.24024c-0.742,-0.661 -1.24267,-1.47656 -1.38867,-1.72656c-0.145,-0.249 -0.01367,-0.38577 0.11133,-0.50977c0.112,-0.112 0.24805,-0.2915 0.37305,-0.4375c0.124,-0.146 0.167,-0.25002 0.25,-0.41602c0.083,-0.166 0.04051,-0.3125 -0.02149,-0.4375c-0.062,-0.125 -0.54753,-1.35756 -0.76953,-1.85156c-0.187,-0.415 -0.3845,-0.42464 -0.5625,-0.43164c-0.145,-0.006 -0.31056,-0.00586 -0.47656,-0.00586z"></path></g></g></g>
                 </svg>
               </div>
               
-              <h2 class="text-xl font-semibold mb-2">WhatsApp</h2>
-              <p>+62 123-456-7890</p>
+              <p class="text-xl font-bold mb-2">WhatsApp</p>
+              <p>+62857-1076-7906</p>
             </div>
             <!-- Bagian Instagram -->
-            <div class="w-full lg:w-1/3 p-4 text-center border-x-4 border-black">
+            <div class="w-full lg:w-1/3 p-4 text-center">
               <div class="flex justify-center mb-4">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#0F0F0F"/>
-                  <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#0F0F0F"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#0F0F0F"/>
-                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="72px" height="72px">
+                  <g transform="translate(51.2,51.2) scale(0.6,0.6)"><g fill="none" fill-rule="nonzero" stroke="#000000" stroke-width="10.66667" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                  <path d="M128,302.4083c-96.32304,0 -174.4083,-78.08525 -174.4083,-174.4083v0c0,-96.32304 78.08525,-174.4083 174.4083,-174.4083h0c96.32304,0 174.4083,78.08525 174.4083,174.4083v0c0,96.32304 -78.08525,174.4083 -174.4083,174.4083z" id="shape"></path></g><g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M8,3c-2.757,0 -5,2.243 -5,5v8c0,2.757 2.243,5 5,5h8c2.757,0 5,-2.243 5,-5v-8c0,-2.757 -2.243,-5 -5,-5zM8,5h8c1.654,0 3,1.346 3,3v8c0,1.654 -1.346,3 -3,3h-8c-1.654,0 -3,-1.346 -3,-3v-8c0,-1.654 1.346,-3 3,-3zM17,6c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM12,7c-2.757,0 -5,2.243 -5,5c0,2.757 2.243,5 5,5c2.757,0 5,-2.243 5,-5c0,-2.757 -2.243,-5 -5,-5zM12,9c1.654,0 3,1.346 3,3c0,1.654 -1.346,3 -3,3c-1.654,0 -3,-1.346 -3,-3c0,-1.654 1.346,-3 3,-3z"></path></g></g></g>
+                </svg>
               </div>
-              <h2 class="text-xl font-semibold mb-2">Instagram</h2>
-              <p>@username_instagram</p>
+              <p class="text-xl font-bold mb-2">Instagram</p>
+              <p>@kinda_corny</p>
             </div>
           </div>
-          <div class="w-1/2 self-center px-4 flex flex-col items-center mb-32 mx-auto">
-            <p class="font-bold text-dark text-2xl mb-10 lg:text-2xl text-center">
+          <div class="w-1/3 self-center px-4 flex flex-col items-center mx-auto">
+            <p class="text-dark text-xl mb-10 text-center">
               Jl. Cilaki, Taman Cibeunying - Bandung Lengkong Culinary Night - Bandung Kinda Corny, Bandung 40114
             </p>
           </div>
         </div>
       </section>
     <!-- End ContactPage -->
+
+
+    <!-- Copyright -->
+    <div class="text-center py-4">
+      <p class="text-black text-md">© 2024 Design by Egy Herdiawan.</p>
+    </div>
 
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>

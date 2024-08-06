@@ -35,10 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // nav-active
   document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('section');
-    const navLi = document.querySelectorAll('nav ul li a');
+    const navLinks = document.querySelectorAll('nav ul li a');
+    const homeLink = document.getElementById('nav-home');
   
-    window.addEventListener('scroll', () => {
+    function setActiveLink() {
       let current = '';
+  
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
@@ -47,13 +49,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
   
-      navLi.forEach(a => {
-        a.classList.remove('active');
-        if (a.getAttribute('href') === `#${current}`) {
-          a.classList.add('active');
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
         }
       });
-    });
+    }
+  
+    window.addEventListener('scroll', setActiveLink);
+  
+    // Set "Home" as active on page load
+    homeLink.classList.add('active');
+    
+    // Set active link on page load
+    setActiveLink();
   });
   
   
